@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <link rel = "icon" href = "/img/XIcon.ico" 
+      type = "image/x-icon">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Todo List</title>
+
+    <link rel="stylesheet" target=_blank href="./CSS/style.css">
+
+    <video id="background-video" autoplay loop muted poster="./img/CatBoat.mp4">
+        <source src="./img/CatBoat.mp4" type="video/mp4">
+    </video>
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()">Close &times;</button>
+        <a href="https://psnprofiles.com/Tockson002" class="w3-bar-item button">PSN</a>
+        <a href="https://www.paypal.com/paypalme/NekoTockson" class="w3-bar-item button">Support Me</a>
+        <a href="https://open.spotify.com/intl-fr/artist/2UwqpfQtNuhBwviIC0f2ie" class="w3-bar-item button">Support My Brother</a>
+        <a href="https://open.spotify.com/intl-fr/track/5JVR0F2Gya13oWlAG3dc62?si=8ac92553e58f4f17" class="w3-bar-item button">Just Vibes</a>
+        <ul id="groupList"></ul>
+    </div>
+
+    <!-- Bouton de la barre latérale -->
+    <div class="w3-teal">
+        <button class="button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <div class="w3-container">
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="centrerhaut">
+        
+        <h1>Ma Liste de tâches</h1>
+
+        <input type="text" id="taskInput" placeholder="Nouvelle tâche...">
+
+        <button id="addTask">Ajouter</button>
+
+        </div>
+        <div class="listeTaches">
+            <ul id="taskList"></ul>
+        </div>
+
+        <button id="clearAll">Enlever du stockage local</button>
+
+    </div>
+
+    <script src="./JavaScript/script.js"></script>
+
+</body>
+
+</html>

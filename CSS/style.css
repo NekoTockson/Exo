@@ -1,0 +1,72 @@
+#background-video { /*Nom de la classe assez clair*/
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }  
+
+#addTask{ /*Styliser  le bouton AddTask*/
+    background-color: rebeccapurple;
+    color: gold;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #333;
+    transition: left 0.3s;
+    z-index: 1;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.w3-sidebar{height:auto ;width: 200px ;background-color:rgba(17, 18, 74, 0.55) ;position:fixed!important ;z-index:1 ;overflow:none}
+.w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.w3-bar-block.w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
+
+body {
+    background-color: rgb(150, 148, 148);
+    font-family: Arial, sans-serif;
+    cursor: url('../img/cursor.cur'), auto;
+   }
+   .container{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid gold;
+    border-radius: 5px;
+    background-color: rebeccapurple;
+    color: gold;
+   }
+   input{
+    background: rebeccapurple;
+    color: gold;
+   }
+   ::placeholder{
+    color: gold;
+    opacity: 0.7;
+   }
+   button{
+    background-color: rebeccapurple;
+    color: gold;
+   }
+.centrerhaut{
+    text-align: center;
+}
+#taskDone{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+a{
+    color: gold;
+}
